@@ -1,0 +1,31 @@
+
+=========================================================================================
+Regarding project: (see the directory containing this file in checklist git report)
+Project version gitrev: (see the directory containing this file in checklist git report)
+Platform: Linux Fedora 24 x86_64
+
+=========================================================================================
+Situation:
+galaxy not work after change ip address of interface
+
+=========================================================================================
+What you tried to do:
+try to change ip address during galaxy work
+
+=========================================================================================
+What action / command you run:
+sudo ifconfig enp0s3 10.0.2.15 up
+
+=========================================================================================
+What happened then:
+galaxy stopped working corectly, ping is not working
+after sudo ifdown enp0s3 and sudo ifup enp0s3 everyting is ok again
+
+=========================================================================================
+What should had happened instead:
+galaxy should detect change of ip and continue sending packets to new phisical ip
+
+=========================================================================================
+Notes / ideas for solution:
+
+

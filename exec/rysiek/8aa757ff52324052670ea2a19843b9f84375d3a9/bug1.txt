@@ -1,0 +1,33 @@
+
+=========================================================================================
+Regarding project: (see the directory containing this file in checklist git report)
+Project version gitrev: (see the directory containing this file in checklist git report)
+Platform: Linux Fedora 24 x86_64
+
+=========================================================================================
+Situation:
+trying to apply build instruction
+
+=========================================================================================
+What you tried to do:
+try to update all packages to latest version
+
+=========================================================================================
+What action / command you run:
+dnf dist distro-sync
+
+=========================================================================================
+What happened then:
+program said:
+
+[tester@localhost galaxy42]$ dnf dist distro-sync
+Nie ma takiego polecenia: dist. Proszę użyć /usr/bin/dnf --help
+Może to być polecenie wtyczki programu DNF, proszę spróbować polecenia: „dnf install 'dnf-command(dist)'”
+
+=========================================================================================
+What should had happened instead:
+all packages will be updated to last version
+
+=========================================================================================
+Notes / ideas for solution:
+dnf distro-sync
